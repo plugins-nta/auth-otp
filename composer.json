@@ -1,0 +1,29 @@
+{
+    "name": "nta/otp-auth",
+    "description": "Laravel OTP Authentication (One Time Passwords)",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Le Nghia",
+            "email": "nghial@nitrotech.asia"
+        }
+    ],
+    "require": {
+        "twilio/sdk": "^6.32",
+        "vonage/client": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nta\\AuthOtp\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nta\\AuthOtp\\AuthOtpServiceProvider"
+            ]
+        }
+    }
+}
